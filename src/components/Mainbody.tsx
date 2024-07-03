@@ -2,6 +2,7 @@ import { ApiType } from "@/utils/type";
 import { Card, CardBody } from "@nextui-org/react";
 import { FaMailBulk, FaUser } from "react-icons/fa";
 import { GrUserExpert } from "react-icons/gr";
+import { IoDocuments } from "react-icons/io5";
 import { MdOutlineDescription } from "react-icons/md";
 type DataType = {
   data: ApiType[];
@@ -38,7 +39,8 @@ const Mainbody = ({ userData }: any) => {
                 </div>
 
                 <div className="flex items-center gap-5">
-                  <MdOutlineDescription size={60} />
+                  <IoDocuments size={25} />
+
                   <div className="">
                     <div className="text-md italic">Bio</div>
                     <div className="text-xl font-semibold">{userData.Bio}</div>
